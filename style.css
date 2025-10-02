@@ -1,0 +1,819 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#navBar {
+  height: 2.5rem;
+  width: 95%;
+  margin-left: 2rem;
+  margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#logo {
+  height: 100%;
+  width: 15%;
+}
+
+#logo img {
+  height: 100%;
+  width: 100%;
+}
+
+#menu {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+#menu ul a {
+  height: 100%;
+  margin: 1em;
+  color: black;
+  font-size: large;
+  text-decoration: none;
+}
+
+#menu ul a:hover {
+  color: rgb(255, 77, 41);
+  text-decoration: underline;
+}
+
+#menu ul :nth-child(1) {
+  color: rgb(255, 77, 41);
+  text-decoration: underline;
+}
+
+#getStarted {
+  height: 100%;
+  width: 15%;
+  border-radius: 100px 100px 100px 100px;
+  padding: 10px 24px 10px 24px;
+  background-color: rgb(255, 77, 41);
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+#getStarted a {
+  height: 100%;
+  width: 100%;
+  font-size: large;
+  text-decoration: none;
+  color: aliceblue;
+}
+
+#getStarted:hover {
+  scale: 95%;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+}
+
+#heroContainer {
+  height: 20rem;
+  width: 96%;
+  margin-left: 1.5rem;
+  margin-top: 6rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#subHero1 {
+  width: 70%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+#subHeroOne {
+  height: 15%;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 0%;
+}
+
+#subHeroOneDiv1 {
+  height: 100%;
+  width: 30%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  font-size: 2rem;
+  padding-bottom: 0%;
+}
+
+#subHeroOneDiv1 i {
+  width: 15%;
+  padding-bottom: 0%;
+  margin: 0px;
+  padding: 0px;
+  border-radius: 100px 100px 100px 100px;
+}
+
+#subHeroOneDiv2 {
+  height: 100%;
+  width: 40%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#subHeroOneDiv2 h2 {
+  align-items: center;
+}
+
+#subHeroTwo {
+  height: 70%;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  font-size: 6rem;
+}
+
+#subHeroThree {
+  height: 15%;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+#subHeroThreeB {
+  height: 100%;
+  width: 20%;
+  border-radius: 100px 100px 100px 100px;
+  padding: 10px 24px 10px 24px;
+  background-color: rgb(255, 77, 41);
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+#subHeroThreeB a {
+  height: 100%;
+  width: 100%;
+  font-size: large;
+  text-decoration: none;
+  color: aliceblue;
+}
+
+#subHeroThreeB:hover {
+  scale: 95%;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+}
+
+#subHeroThree p {
+  height: 100%;
+  width: 50%;
+  margin-left: 19rem;
+}
+
+#subHero2 {
+  height: 100%;
+  width: 20%;
+  background-image: url("./assets/HomeImg/Img7.jpg");
+  background-position: center;
+  background-size: cover;
+  border-radius: 24px 16px 24px 16px;
+}
+
+#aiPoweredSolution {
+  height: 45rem;
+  width: 94%;
+  margin-top: 4rem;
+  margin-left: 3rem;
+  border-radius: 1rem;
+  background-image: url("./assets/HomeImg/Img5.jpg");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#APSOne {
+  height: 20%;
+  width: 30%;
+  margin-top: 2rem;
+  margin-left: 68%;
+  font-size: xx-large;
+  text-shadow: 0px 0px 10px gray;
+}
+
+#APSOne h3 {
+  text-align: end;
+}
+
+#APSTwo {
+  margin-top: 13rem;
+  margin-left: 2rem;
+  height: 40%;
+  width: 25%;
+  background-color: aliceblue;
+  border-radius: 1rem;
+  text-align: start;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+#APSTwoImgDiv {
+  height: 15%;
+  width: 15%;
+  margin-top: 2rem;
+  margin-left: 2rem;
+  background-image: url("./assets/HomeImg/logo2.png");
+  background-position: center;
+  background-size: cover;
+  border-radius: 100px;
+}
+
+#APSTwo h4 {
+  height: 10%;
+  margin-top: 3rem;
+  margin-left: 2rem;
+  font-family: sans-serif;
+}
+
+#APSTwo p {
+  height: 20%;
+  margin-top: 1rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+#APSTwo a {
+  margin-top: 1rem;
+  margin-left: 2rem;
+  height: 15%;
+  width: 40%;
+  text-decoration: none;
+  color: black;
+  text-align: center;
+  animation-duration: 2s;
+  animation-timing-function: ease;
+}
+
+#APSTwo a:hover {
+  scale: 95%;
+}
+
+#visionBehind {
+  height: 10rem;
+  width: 94%;
+  margin-top: 6rem;
+  margin-left: 3rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#visionBehindImgDiv {
+  height: 100%;
+  width: 17%;
+  margin-left: 1rem;
+  background-image: url("./assets/HomeImg/Img1.jpg");
+  background-position: center;
+  background-size: cover;
+  border-radius: 1rem;
+}
+
+#visionBehindH {
+  height: 100%;
+  width: 50%;
+  margin-right: 2rem;
+  padding-top: 1rem;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: x-large;
+}
+
+#Innovating {
+  height: 20rem;
+  width: 94%;
+  margin-top: 6rem;
+  margin-left: 3rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#InnovatingOne {
+  height: 100%;
+  width: 28%;
+}
+
+#InnovatingOne h3 {
+  height: 30%;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: lighter;
+  font-size: x-large;
+}
+
+#InnovatingOne p {
+  height: 30%;
+  margin-top: 3rem;
+}
+
+#InnovatingOne div {
+  height: 15%;
+  width: 50%;
+  margin-top: 1.5rem;
+  margin-left: 1rem;
+  text-align: center;
+  border-radius: 100px 100px 100px 100px;
+  padding: 10px 24px 10px 24px;
+  background-color: rgb(255, 77, 41);
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+#InnovatingOne div a {
+  height: 100%;
+  width: 100%;
+  font-size: large;
+  text-decoration: none;
+  color: aliceblue;
+}
+
+#InnovatingOne div:hover {
+  scale: 95%;
+  animation-duration: 2s;
+}
+
+#InnovatingTwo {
+  height: 100%;
+  width: 28%;
+  background-image: url("./assets/HomeImg/Img4.jpg");
+  background-position: center;
+  background-size: cover;
+  border-radius: 1rem;
+  border: 1px solid black;
+}
+
+#InnovatingThree {
+  height: 100%;
+  width: 38%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#IT1 {
+  height: 45%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#IT1Logo {
+  height: 30%;
+  width: 10%;
+  border-radius: 100px;
+  background-image: url("./assets/HomeImg/logo2.png");
+  background-position: center;
+  background-size: cover;
+}
+
+#IT1p {
+  height: 100%;
+  width: 85%;
+}
+
+#IT1p h4 {
+  height: 30%;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: lighter;
+  font-size: x-large;
+}
+
+#IT1p p {
+  height: 60%;
+}
+
+#IT2 {
+  height: 45%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#IT2Logo {
+  height: 30%;
+  width: 10%;
+  border-radius: 100px;
+  background-image: url("./assets/HomeImg/logo2.png");
+  background-position: center;
+  background-size: cover;
+}
+
+#IT2p {
+  height: 100%;
+  width: 85%;
+}
+
+#IT2p h4 {
+  height: 30%;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: lighter;
+  font-size: x-large;
+}
+
+#IT2p p {
+  height: 60%;
+}
+
+#team {
+  margin-top: 6rem;
+  margin-left: 3rem;
+  height: 40rem;
+  width: 94%;
+}
+
+#team1 {
+  padding-left: 1rem;
+  padding-top: 2rem;
+  height: 15%;
+}
+
+#team1 h2 {
+  font-size: xx-large;
+}
+
+#team2 {
+  height: 85%;
+  padding-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#teamImg {
+  height: 90%;
+  width: 32%;
+  display: flex;
+  flex-wrap: wrap;
+  background-image: url("/assets/HomeImg/Img9.jpg");
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+}
+
+#teamImgP1 {
+  height: 80%;
+  width: 100%;
+}
+
+#teamImgP2 {
+  height: 10%;
+  width: 100%;
+  padding-left: 2rem;
+  padding-top: 1rem;
+  font-weight: lighter;
+  color: aliceblue;
+}
+
+#teamImgH3 {
+  height: 10%;
+  width: 100%;
+  padding-left: 2rem;
+  font-size: xx-large;
+  color: aliceblue;
+}
+
+/* ========================================================================= */
+/* -------------------------- TABLET VIEW (<= 1024px) -------------------------- */
+/* ========================================================================= */
+
+@media (max-width: 1024px) {
+  #navBar {
+    width: 98%;
+    margin: 2rem auto 0 auto;
+  }
+
+  #menu {
+    width: 45%;
+  }
+
+  #getStarted {
+    width: 18%;
+    padding: 8px 16px;
+  }
+
+  #heroContainer {
+    width: 98%;
+    margin-left: 1%;
+    height: 18rem;
+  }
+
+  #subHero1 {
+    width: 65%;
+  }
+
+  #subHero2 {
+    width: 30%;
+  }
+
+  #subHeroTwo {
+    font-size: 5rem;
+  }
+
+  #subHeroThree p {
+    margin-left: 5rem;
+    width: 60%;
+  }
+
+  #aiPoweredSolution {
+    margin-left: 1%;
+    width: 98%;
+    height: 35rem;
+  }
+
+  #APSOne {
+    margin-left: 60%;
+    width: 38%;
+    font-size: large;
+  }
+
+  #APSTwo {
+    margin-top: 10rem;
+    width: 35%;
+    height: 50%;
+  }
+
+  #visionBehind {
+    margin-left: 1%;
+    width: 98%;
+  }
+
+  #visionBehindH {
+    width: 70%;
+    font-size: large;
+  }
+
+  #Innovating {
+    margin-left: 1%;
+    width: 98%;
+  }
+
+  #InnovatingOne {
+    width: 30%;
+  }
+
+  #InnovatingTwo {
+    width: 30%;
+  }
+
+  #InnovatingThree {
+    width: 35%;
+  }
+
+  #InnovatingOne h3,
+  #IT1p h4,
+  #IT2p h4 {
+    font-size: large;
+  }
+
+  #team {
+    margin-left: 1%;
+    width: 98%;
+  }
+
+  #team2 {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  #teamImg {
+    width: 30%;
+  }
+}
+
+/* ========================================================================= */
+/* --------------------------- MOBILE VIEW (<= 480px) -------------------------- */
+/* ========================================================================= */
+
+@media (max-width: 480px) {
+  #navBar {
+    flex-direction: column;
+    height: auto;
+    margin: 1rem auto;
+    width: 90%;
+  }
+
+  #logo {
+    width: 50%;
+    margin: 0 auto 1rem auto;
+    height: 2rem;
+  }
+
+  #menu {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  #menu ul {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #menu ul a {
+    margin: 0.5em 0;
+  }
+
+  #getStarted {
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  #heroContainer {
+    flex-direction: column;
+    height: auto;
+    margin-top: 2rem;
+    width: 90%;
+  }
+
+  #subHero1 {
+    width: 100%;
+    order: 2;
+  }
+
+  #subHero2 {
+    width: 100%;
+    height: 15rem;
+    margin-bottom: 2rem;
+    order: 1;
+  }
+
+  #subHeroTwo {
+    font-size: 3rem;
+    height: 40%;
+  }
+
+  #subHeroOne {
+    flex-direction: column;
+    height: auto;
+  }
+
+  #subHeroOneDiv1,
+  #subHeroOneDiv2 {
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 0.5rem;
+  }
+
+  #subHeroThree {
+    flex-direction: column;
+    height: auto;
+  }
+
+  #subHeroThreeB {
+    width: 60%;
+    margin: 1rem auto;
+  }
+
+  #subHeroThree p {
+    width: 90%;
+    margin: 0 auto 2rem auto;
+    text-align: center;
+  }
+
+  #aiPoweredSolution {
+    flex-direction: column;
+    height: 40rem;
+    width: 90%;
+    margin: 2rem auto;
+    background-size: auto 100%;
+  }
+
+  #APSOne {
+    width: 100%;
+    margin: 1rem 0;
+    text-align: center;
+    margin-left: 0;
+  }
+
+  #APSOne h3 {
+    text-align: center;
+  }
+
+  #APSTwo {
+    width: 90%;
+    height: 50%;
+    margin: 0 auto;
+  }
+
+  #visionBehind {
+    flex-direction: column;
+    height: auto;
+    width: 90%;
+    margin: 2rem auto;
+    text-align: center;
+  }
+
+  #visionBehindImgDiv {
+    width: 80%;
+    height: 15rem;
+    margin: 0 auto 1rem auto;
+  }
+
+  #visionBehindH {
+    width: 100%;
+    font-size: medium;
+    margin: 0;
+  }
+
+  #Innovating {
+    flex-direction: column;
+    height: auto;
+    width: 90%;
+    margin: 2rem auto;
+  }
+
+  #InnovatingOne,
+  #InnovatingTwo,
+  #InnovatingThree {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  #InnovatingTwo {
+    height: 15rem;
+    order: 2;
+  }
+
+  #InnovatingOne {
+    order: 1;
+    text-align: center;
+  }
+
+  #InnovatingOne div {
+    margin: 1.5rem auto;
+  }
+
+  #InnovatingThree {
+    order: 3;
+    justify-content: flex-start;
+    height: auto;
+  }
+
+  #IT1,
+  #IT2 {
+    height: auto;
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+
+  #IT1Logo,
+  #IT2Logo {
+    margin: 0 auto 0.5rem auto;
+    width: 15%;
+    height: 2.5rem;
+  }
+
+  #IT1p,
+  #IT2p {
+    width: 100%;
+  }
+
+  #team {
+    width: 90%;
+    margin: 2rem auto;
+    height: auto;
+  }
+
+  #team1 {
+    text-align: center;
+    padding: 0;
+    height: 8%;
+  }
+
+  #team2 {
+    flex-direction: column;
+  }
+
+  #teamImg {
+    width: 100%;
+    height: 20rem;
+    margin-bottom: 1.5rem;
+  }
+}
