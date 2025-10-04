@@ -1,0 +1,199 @@
+/* ======================================= */
+/* --- Global Overrides for Navigation --- */
+/* ======================================= */
+
+/* Active link style for the About Us page */
+#menu ul a.active-link {
+    color: rgb(255, 77, 41);
+    text-decoration: underline;
+}
+
+/* ======================================= */
+/* --- About Us Page Styles (Mobile First) --- */
+/* ======================================= */
+
+#aboutContainer {
+    width: 90%;
+    max-width: 1200px;
+    margin: 4rem auto;
+    padding: 0 1rem;
+}
+
+/* --- 1. Hero/Title Section --- */
+#aboutHero {
+    text-align: center;
+    padding: 2rem 0;
+    margin-bottom: 3rem;
+    border-bottom: 1px solid #eee;
+}
+
+#aboutHero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+#aboutHero p {
+    font-size: 1rem;
+    color: #555;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* --- 2. Core Values Section (The main responsive challenge) --- */
+#coreValues {
+    padding: 3rem 0;
+}
+
+#coreValues h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+/* Mobile: Items stack vertically */
+.values-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.value-card {
+    text-align: center;
+    padding: 2rem 1.5rem;
+    border-radius: 8px;
+    background-color: #f7f7f7;
+    transition: transform 0.3s ease;
+}
+
+.value-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.value-card i {
+    color: rgb(255, 77, 41); /* Virlogy brand color */
+    margin-bottom: 1rem;
+}
+
+.value-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+/* --- 3. Our History/Mission Section (Two-Column structure) --- */
+#missionHistory {
+    padding: 3rem 0;
+    display: flex;
+    flex-direction: column; /* Mobile: Stack text over stats */
+    gap: 2rem;
+}
+
+.mission-text h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    border-left: 4px solid rgb(255, 77, 41);
+    padding-left: 15px;
+}
+
+.mission-text p {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+.mission-stats {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Allow stats to wrap on smaller screens */
+    background-color: #1a1a1a;
+    color: white;
+    padding: 2rem 1rem;
+    border-radius: 8px;
+}
+
+.stat-item {
+    width: 48%; /* Mobile: Two columns for stats */
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.stat-item i {
+    color: rgb(255, 77, 41);
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.stat-item h4 {
+    font-size: 2rem;
+    margin: 0.2rem 0;
+}
+
+.stat-item p {
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+/* --- Footer --- */
+#footer {
+    height: 5rem;
+    width: 100%;
+    background-color: #1a1a1a;
+    color: white;
+    text-align: center;
+    padding-top: 2rem;
+}
+
+/* ======================================= */
+/* --- MEDIA QUERIES (Tablet & Desktop) --- */
+/* ======================================= */
+
+/* Tablet View (600px and up) */
+@media (min-width: 600px) {
+    /* 2. Core Values: Two Columns */
+    .values-grid {
+        flex-direction: row; /* Switch to row layout */
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    .value-card {
+        width: 48%; /* Two cards per row */
+    }
+
+    /* 3. Mission Stats: Three Columns */
+    .stat-item {
+        width: 30%; /* Three stats per row */
+    }
+}
+
+
+/* Desktop View (992px and up) */
+@media (min-width: 992px) {
+    /* 1. Hero */
+    #aboutHero h1 {
+        font-size: 3.5rem;
+    }
+
+    /* 2. Core Values: Three Columns */
+    .values-grid {
+        gap: 1.5rem;
+    }
+    
+    .value-card {
+        width: 31%; /* Three cards per row */
+    }
+
+    /* 3. Mission History: Two Columns */
+    #missionHistory {
+        flex-direction: row; /* Switch to a two-column layout */
+        align-items: center;
+    }
+    
+    .mission-text, .mission-stats {
+        width: 48%; /* Split the section into two columns */
+    }
+
+    /* 3. Mission Stats: Keep three columns inside its container */
+    .stat-item {
+        width: 30%;
+    }
+}

@@ -1,21 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="./assets/HomeImg/logo2.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
     <link rel="stylesheet" href="style.css" />
-    <title>Blogs</title>
-</head>
-<body>
+    <link rel="stylesheet" href="blogs.css" />
+    <title>VIRLOGY-BLOGS</title>
+  </head>
+  <body>
     <header id="navBar">
       <div id="logo">
-        <img src="./assets/HomeImg/logo-virlogy.png" alt="" />
+        <img src="./assets/HomeImg/logo-virlogy.png" alt="Virlogy Logo" />
       </div>
       <div id="menu">
         <ul>
           <a href="index.html">HOME</a>
-          <a href="aboutUs.html">ABOUT US</a>
+          <a href="aboutUs.html" class="active-link">ABOUT US</a>
           <a href="blogs.html">BLOGS</a>
           <a href="contactUs.html">CONTACT US</a>
         </ul>
@@ -24,6 +29,127 @@
         <a href="">GET STARTED<i class="fa-solid fa-arrow-right"></i></a>
       </div>
     </header>
-    <h1 id="theFinalH1">This is Blogs page</h1>
-</body>
+
+    <main id="blogContainer">
+      <section id="blogHero">
+        <h1>Insights & Innovations</h1>
+        <p>
+          Stay updated with the latest in AI, Virtual Reality, and our thought
+          leadership in digital transformation.
+        </p>
+      </section>
+
+      <section id="filterBar">
+        <div class="search-input">
+          <input type="text" placeholder="Search articles..." />
+          <i class="fas fa-search"></i>
+        </div>
+        <div class="category-select">
+          <select>
+            <option value="">All Categories</option>
+            <option value="ai">Artificial Intelligence</option>
+            <option value="xr">Extended Reality</option>
+            <option value="ethics">Tech Ethics</option>
+            <option value="company">Company News</option>
+          </select>
+          <i class="fas fa-filter"></i>
+        </div>
+      </section>
+
+      <section id="postGrid">
+        <article class="blog-post featured-post">
+          <div class="post-img-placeholder">
+            <i class="fas fa-star fa-3x"></i>
+          </div>
+          <div class="post-content">
+            <span class="post-category">FEATURED: AI</span>
+            <h2>The Next Era of Predictive AI in XR Environments</h2>
+            <p>
+              Explore how Virlogy is merging deep learning with real-time virtual
+              spaces to create truly intelligent interactions...
+            </p>
+            <div class="post-meta">
+              <span><i class="far fa-clock"></i> Sept 28, 2025</span>
+              <a href="#">Read More <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </article>
+
+        <article class="blog-post">
+          <div class="post-img-placeholder"><i class="fas fa-robot"></i></div>
+          <div class="post-content">
+            <span class="post-category">Artificial Intelligence</span>
+            <h3>5 Ways AI is Automating Creative Workflows</h3>
+            <p>
+              From drafting content to generating initial designs, AI is becoming
+              the co-pilot for creativity.
+            </p>
+            <div class="post-meta">
+              <span><i class="far fa-clock"></i> Sept 20, 2025</span>
+              <a href="#">Read More <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </article>
+
+        <article class="blog-post">
+          <div class="post-img-placeholder"><i class="fas fa-cube"></i></div>
+          <div class="post-content">
+            <span class="post-category">Extended Reality</span>
+            <h3>Designing Haptic Feedback for Immersive Training</h3>
+            <p>
+              A deep dive into how realistic touch is implemented in our latest
+              industrial XR simulator.
+            </p>
+            <div class="post-meta">
+              <span><i class="far fa-clock"></i> Sept 15, 2025</span>
+              <a href="#">Read More <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </article>
+
+        <article class="blog-post">
+          <div class="post-img-placeholder"><i class="fas fa-check-shield"></i></div>
+          <div class="post-content">
+            <span class="post-category">Tech Ethics</span>
+            <h3>Building Trust: Transparency in Algorithmic Decision-Making</h3>
+            <p>
+              Our framework for ensuring our AI solutions are transparent and
+              accountable to users.
+            </p>
+            <div class="post-meta">
+              <span><i class="far fa-clock"></i> Sept 10, 2025</span>
+              <a href="#">Read More <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </article>
+
+        <article class="blog-post">
+          <div class="post-img-placeholder"><i class="fas fa-award"></i></div>
+          <div class="post-content">
+            <span class="post-category">Company News</span>
+            <h3>Virlogy Wins 'Innovation of the Year' Award</h3>
+            <p>
+              We are proud to announce our recognition for our pioneering work in
+              digital twin technology.
+            </p>
+            <div class="post-meta">
+              <span><i class="far fa-clock"></i> Sept 01, 2025</span>
+              <a href="#">Read More <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <div id="pagination">
+        <a href="#" class="active">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <a href="#"><i class="fas fa-angle-right"></i></a>
+      </div>
+    </main>
+
+    <footer id="footer">
+        <p>&copy; 2025 VIRLOGY. All rights reserved. | Powered by Next-Gen AI.</p>
+    </footer>
+  </body>
 </html>

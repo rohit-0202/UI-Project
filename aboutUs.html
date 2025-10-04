@@ -1,21 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="./assets/HomeImg/logo2.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
     <link rel="stylesheet" href="style.css" />
-    <title>About_US</title>
-</head>
-<body>
+    <link rel="stylesheet" href="about.css" />
+    <title>VIRLOGY-ABOUT US</title>
+  </head>
+  <body>
     <header id="navBar">
       <div id="logo">
-        <img src="./assets/HomeImg/logo-virlogy.png" alt="" />
+        <img src="./assets/HomeImg/logo-virlogy.png" alt="Virlogy Logo" />
       </div>
       <div id="menu">
         <ul>
           <a href="index.html">HOME</a>
-          <a href="aboutUs.html">ABOUT US</a>
+          <a href="aboutUs.html" class="active-link">ABOUT US</a>
           <a href="blogs.html">BLOGS</a>
           <a href="contactUs.html">CONTACT US</a>
         </ul>
@@ -24,6 +29,87 @@
         <a href="">GET STARTED<i class="fa-solid fa-arrow-right"></i></a>
       </div>
     </header>
-    <h1 id="theFinalH1">This is About-Us page</h1>
-</body>
+
+    <main id="aboutContainer">
+      <section id="aboutHero">
+        <h1>Pioneering the Future of Digital Reality</h1>
+        <p>
+          We are Virlogy, a collective of innovators at the intersection of
+          Artificial Intelligence and Extended Reality (XR). Our mission is to
+          shape human experience through cutting-edge, ethically-driven
+          technology.
+        </p>
+      </section>
+
+      <section id="coreValues">
+        <h2>Our Guiding Principles</h2>
+        <div class="values-grid">
+          <div class="value-card">
+            <i class="fas fa-brain fa-3x"></i>
+            <h3>Innovation First</h3>
+            <p>
+              Driving continuous evolution in AI and XR to solve complex,
+              real-world challenges. We believe in pushing boundaries.
+            </p>
+          </div>
+          <div class="value-card">
+            <i class="fas fa-handshake fa-3x"></i>
+            <h3>Ethical Integrity</h3>
+            <p>
+              Committing to responsible technology development, ensuring
+              transparency, fairness, and positive societal impact in every
+              solution we create.
+            </p>
+          </div>
+          <div class="value-card">
+            <i class="fas fa-users-viewfinder fa-3x"></i>
+            <h3>Customer-Centricity</h3>
+            <p>
+              Placing our clients' vision at the core of our development process,
+              delivering bespoke solutions that exceed expectations.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="missionHistory">
+        <div class="mission-text">
+          <h3>The Virlogy Story</h3>
+          <p>
+            Founded in 2020 by a diverse group of engineers and designers,
+            Virlogy quickly emerged as a leader in immersive computing. Our early
+            successes in industrial training simulations paved the way for our
+            expansion into public-facing augmented reality experiences.
+          </p>
+          <p>
+            Today, we are focused on integrating predictive AI models with
+            real-time XR environments, enabling a new generation of interactive,
+            intelligent digital spaces.
+          </p>
+        </div>
+        <div class="mission-stats">
+          <div class="stat-item">
+            <i class="fas fa-chart-line"></i>
+            <h4>$5M+</h4>
+            <p>Annual R&D Investment</p>
+          </div>
+          <div class="stat-item">
+            <i class="fas fa-globe"></i>
+            <h4>10+</h4>
+            <p>Global Project Deployments</p>
+          </div>
+          <div class="stat-item">
+            <i class="fas fa-code-branch"></i>
+            <h4>99.9%</h4>
+            <p>Model Accuracy Rate</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="footer">
+        <p>&copy; 2025 VIRLOGY. All rights reserved. | Powered by Next-Gen AI.</p>
+    </footer>
+
+  </body>
 </html>

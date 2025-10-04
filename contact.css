@@ -1,0 +1,223 @@
+/* ======================================= */
+/* --- Global Overrides for Navigation --- */
+/* ======================================= */
+
+/* Active link style for the Contact Us page */
+#menu ul a.active-link {
+    color: rgb(255, 77, 41);
+    text-decoration: underline;
+}
+
+/* ======================================= */
+/* --- Contact Us Page Styles (Mobile First) --- */
+/* ======================================= */
+
+#contactContainer {
+    width: 90%;
+    max-width: 1200px;
+    margin: 4rem auto;
+    padding: 0 1rem;
+}
+
+/* --- 1. Contact Hero/Title Section --- */
+#contactHero {
+    text-align: center;
+    padding: 2rem 0 4rem;
+}
+
+#contactHero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+#contactHero p {
+    font-size: 1rem;
+    color: #555;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* --- 2. Main Contact Grid (Mobile: Stacked) --- */
+#contactGrid {
+    display: flex;
+    flex-direction: column; /* Stacks the two columns on mobile */
+    gap: 30px;
+    padding-bottom: 4rem;
+}
+
+/* --- Contact Information Side --- */
+#contactInfo {
+    padding: 20px;
+    background-color: #f7f7f7;
+    border-radius: 8px;
+}
+
+#contactInfo h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: rgb(255, 77, 41);
+}
+
+.info-block {
+    display: flex;
+    align-items: flex-start;
+    margin: 1.5rem 0;
+}
+
+.info-block i {
+    font-size: 1.5rem;
+    color: #1a1a1a;
+    margin-right: 15px;
+    padding-top: 5px;
+}
+
+.info-block h4 {
+    margin-bottom: 0.3rem;
+}
+
+.info-block p {
+    color: #555;
+    font-size: 0.95rem;
+}
+
+#contactSocial {
+    margin-top: 2rem;
+    border-top: 1px solid #ddd;
+    padding-top: 1.5rem;
+}
+
+#contactSocial a {
+    color: #1a1a1a;
+    font-size: 1.5rem;
+    margin-right: 15px;
+    transition: color 0.3s;
+}
+
+#contactSocial a:hover {
+    color: rgb(255, 77, 41);
+}
+
+
+/* --- Contact Form Side --- */
+#contactForm {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+#contactForm h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.form-group {
+    margin-bottom: 1.2rem;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    font-size: 0.95rem;
+}
+
+.form-group input, .form-group textarea, .form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    box-sizing: border-box; /* Important for responsive padding */
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+#submitBtn {
+    background-color: rgb(255, 77, 41);
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    width: 100%; /* Full width on mobile */
+    margin-top: 1rem;
+}
+
+#submitBtn:hover {
+    background-color: #e54d2e;
+}
+
+#submitBtn i {
+    margin-left: 10px;
+}
+
+/* --- 3. Map Placeholder --- */
+#mapPlaceholder {
+    text-align: center;
+    padding: 3rem 1rem;
+    background-color: #1a1a1a;
+    color: white;
+    border-radius: 8px;
+    margin-bottom: 4rem;
+}
+
+#mapPlaceholder i {
+    color: rgb(255, 77, 41);
+    margin-bottom: 1rem;
+}
+
+#mapPlaceholder h3 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+}
+
+/* --- Footer (Reused from about.css) --- */
+#footer {
+    height: 5rem;
+    width: 100%;
+    background-color: #1a1a1a;
+    color: white;
+    text-align: center;
+    padding-top: 2rem;
+}
+
+
+/* ======================================= */
+/* --- MEDIA QUERIES (Tablet & Desktop) --- */
+/* ======================================= */
+
+/* Tablet and Desktop View (768px and up) */
+@media (min-width: 768px) {
+    /* 2. Main Contact Grid: Two Columns */
+    #contactGrid {
+        flex-direction: row; /* Switch to side-by-side layout */
+        display: grid;
+        grid-template-columns: 40% 60%; /* Info on left, Form on right */
+        gap: 30px;
+    }
+
+    #contactInfo {
+        padding: 30px;
+    }
+    
+    #contactForm {
+        padding: 30px;
+    }
+
+    /* Reset button width for desktop */
+    #submitBtn {
+        width: auto; 
+    }
+}
+
+/* Large Desktop View (1200px and up) */
+@media (min-width: 1200px) {
+    #contactHero h1 {
+        font-size: 3.5rem;
+    }
+}

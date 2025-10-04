@@ -4,18 +4,23 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="./assets/HomeImg/logo2.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
     <link rel="stylesheet" href="style.css" />
-    <title>Contact_US</title>
+    <link rel="stylesheet" href="contact.css" />
+    <title>VIRLOGY-CONTACT US</title>
   </head>
   <body>
     <header id="navBar">
       <div id="logo">
-        <img src="./assets/HomeImg/logo-virlogy.png" alt="" />
+        <img src="./assets/HomeImg/logo-virlogy.png" alt="Virlogy Logo" />
       </div>
       <div id="menu">
         <ul>
           <a href="index.html">HOME</a>
-          <a href="aboutUs.html">ABOUT US</a>
+          <a href="aboutUs.html" class="active-link">ABOUT US</a>
           <a href="blogs.html">BLOGS</a>
           <a href="contactUs.html">CONTACT US</a>
         </ul>
@@ -24,6 +29,82 @@
         <a href="">GET STARTED<i class="fa-solid fa-arrow-right"></i></a>
       </div>
     </header>
-    <h1 id="theFinalH1">This is Contact-Us page</h1>
-  </body>
-</html>
+
+    <main id="contactContainer">
+      <section id="contactHero">
+        <h1>Let's Build the Future Together</h1>
+        <p>
+          Ready to start your project, or just want to chat about AI and XR? Get
+          in touch with our team today.
+        </p>
+      </section>
+
+      <section id="contactGrid">
+        
+        <div id="contactInfo">
+          <h2>Get in Touch</h2>
+          <p>
+            Our team is available Monday to Friday from 9 AM to 5 PM (EST). We
+            aim to respond to all inquiries within 24 hours.
+          </p>
+
+          <div class="info-block">
+            <i class="fas fa-map-marker-alt"></i>
+            <div>
+              <h4>Our Global Headquarters</h4>
+              <p>100 Virtual Reality Ave, Suite 404, San Francisco, CA 94107</p>
+            </div>
+          </div>
+
+          <div class="info-block">
+            <i class="fas fa-envelope"></i>
+            <div>
+              <h4>Email Us</h4>
+              <p>contact@virlogy.com</p>
+            </div>
+          </div>
+
+          <div class="info-block">
+            <i class="fas fa-phone"></i>
+            <div>
+              <h4>Call Us</h4>
+              <p>+1 (555) VIRLOGY (8475649)</p>
+            </div>
+          </div>
+
+          <div id="contactSocial">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+
+        <div id="contactForm">
+          <h2>Send Us a Message</h2>
+          <form action="#" method="POST">
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" name="name" required />
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+            
+            <div class="form-group">
+                <label for="subject">Subject</label>
+                <select id="subject" name="subject" required>
+                    <option value="" disabled selected>Select a subject...</option>
+                    <option value="sales">Sales Inquiry</option>
+                    <option value="support">Technical Support</option>
+                    <option value="careers">Careers/Job Opportunities</option>
+                    <option value="general">General Question</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Your Message</label>
+              <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
